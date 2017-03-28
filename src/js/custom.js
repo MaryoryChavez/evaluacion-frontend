@@ -94,7 +94,7 @@ function opciones() {
 function calcular() {
     console.log("es: " + Math.abs(km) + "pass: " + pass + "gas " + gas);
     var multi = Math.abs(km) * gas;
-    var div = multi / pass;
-    console.log("total " + div);
-    swal("Costo total: " + div+" CLP", "Por persona");
+    var total = multi / pass;
+    console.log("total " + total);
+    swal("Costo total: $" + total.toFixed(2)+" CLP", "Por persona");
 }
