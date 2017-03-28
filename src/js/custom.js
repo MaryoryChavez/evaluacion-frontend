@@ -6,6 +6,14 @@ $(document).ready(function () {
     opciones()
 });
 
+function blocke() {
+    if ($('#num')[0].value.length > 0) {
+        $('#check_car')[0].disabled = false;
+    } else {
+        $('#check_car')[0].disabled = true;
+    }
+}
+
 function cargarLista() {
     for (var i = 0; i < ciudades.length; i++) {
         var liText = '<option value=' + ciudades[i].distance + ' >' + ciudades[i].name + '</option>';
