@@ -1,0 +1,12 @@
+$naranja:#ffc56e;
+
+@mixin botonNaranja ($altura, $derecha) {
+    position: absolute;
+        top: $altura;
+        left: $derecha;
+        padding: 5px 127px;
+        background-color: $naranja;
+        border: none;
+        font-weight: bold;
+        color: #fff;
+}

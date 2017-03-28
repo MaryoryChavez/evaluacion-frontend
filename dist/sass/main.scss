@@ -1,0 +1,11 @@
+@import "header";
+@import "puntos";
+@import "autos";
+
+html{
+    background-image: url('../../src/img/background.jpg');
+    background-size:cover 100%;
+}
+body{
+    background-color: none;
+}

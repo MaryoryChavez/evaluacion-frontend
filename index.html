@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Examen Final</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/sweetalert.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-fixed-top">
+        <div class="container-fluid conten">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"><i class="fa fa-info-circle" id="ico-info" aria-hidden="true"></i></button>
+                <a class="navbar-brand logo" href="#hero"><img src="src/img/logo-gris.jpg" alt=""></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="menu nav navbar-nav navbar-right">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-info-circle" id="ico-info" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <p>Carrocomp!</p>
+                            <p><i>La nueva forma de moverte en la ciudad.</i> <br> Con <b>Carrocomp!</b> puedes compartir <br> tu viaje con amigos y cobrar el costo equitativamente</p>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="home-sec">
+        <div class="container">
+
+        </div>
+    </div>
+    <!--END HOME SECTION-->
+
+    <section id="info">
+        <div class="container">
+            <div class="box">
+                <div id="origen" class="points">
+                    <h1>Origen</h1>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <select id="list1" class="form-control">
+                              
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="destino" class="points">
+                    <h1>Destino</h1>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <select id="list2" class="form-control">
+                              
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="check_city">buscar</button>
+        </div>
+    </section>
+
+    <!--END ABOUT SECTION-->
+    <section id="calculator" style="display:none">
+        <div class="container">
+            <div class="box">
+                <div class="titulo">
+                    <h1>Vehículo</h1>
+                    <p>seleccione</p>
+                </div>
+                <form action="">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="moto" checked>
+                              <img src="src/img/moto.jpg" alt="">
+                               <div class="data">
+                                <p class="name_car">Motocicleta</p>
+                                <p class="desc">máximo 2 pasajeros</p>
+                               </div>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="auto">
+                              <img src="src/img/auto.jpg" alt="">
+                               <div class="data">
+                                <p class="name_car">Automovil</p>
+                                <p class="desc">máximo 5 pasajeros</p>
+                               </div>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="mini">
+                              <img src="src/img/van.jpg" alt="">
+                               <div class="data">
+                                <p class="name_car">Minivan</p>
+                                <p class="desc">máximo 8 pasajeros</p>
+                               </div>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="camion">
+                              <img src="src/img/camion.jpg" alt="">
+                               <div class="data">
+                                <p class="name_car">Camión</p>
+                                <p class="desc">máximo 3 pasajeros</p>
+                               </div>
+                        </label>
+                    </div>
+                    <div id="pasajeros">
+                        <p>Cantidad de Pasajeros: </p><input type="text" id="num">
+                    </div>
+                </form>
+                <button id="check_car">enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/custom.js"></script>
+    <script src="src/js/ciudades.js"></script>
+    <script src="src/js/sweetalert.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@import "packs";
+
+header{
+    .conten{
+        padding-bottom: 15px;
+    }
+    background-color: #fff;
+    img{
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+    #ico-info{
+        font-size: 2.5em;
+        color: $naranja;
+        margin-top: 16px;
+        margin-right: 0px;
+    }
+    ul{
+        margin-right: 100px !important;
+    }
+    p{
+        padding: 5px 10px;
+        &:nth-child(1){
+            color: $naranja;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
