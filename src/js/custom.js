@@ -4,20 +4,22 @@ var pass = null;
 
 
 function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.4696089, lng: -70.7153597},
-          scrollwheel: false,
-          zoom: 12
-        });
-      }
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: -33.4696089,
+            lng: -70.7153597
+        },
+        scrollwheel: false,
+        zoom: 12
+    });
+}
 
 $(document).ready(function () {
     cargarLista()
     opciones()
 });
 
-function blocke() {
+function block() {
     if ($('#num')[0].value.length > 0) {
         $('#check_car')[0].disabled = false;
     } else {
@@ -28,23 +30,23 @@ function blocke() {
 function cargarLista() {
     for (var i = 0; i < ciudades.length; i++) {
         var liText = '<option value=' + ciudades[i].distance + ' >' + ciudades[i].name + '</option>';
-        //console.log(ciudades[i].name);
         $("#list1").append(liText);
         $("#list2").append(liText);
     }
     $("#check_city").click(function () {
-        $("#calculator").show();
-        
         var list1 = $("#list1 option:selected").val();
         var list2 = $("#list2 option:selected").val();
-        console.log(parseInt(list2));
-        km = parseInt(list2) - parseInt(list1);
+        
+        if(list1 != list2){
+            $("#calculator").show();
+            km = parseInt(list2) - parseInt(list1);
+        }
     })
 };
 
-$('.dropdown-toggle').hover(function(){
+$('.dropdown-toggle').hover(function () {
     $('.dropdown-menu').show();
-},function(){
+}, function () {
     $('.dropdown-menu').hide();
 });
 
@@ -113,8 +115,5 @@ function calcular() {
     var multi = Math.abs(km) * gas;
     var total = multi / pass;
     console.log("total " + total);
-    swal("Costo total: $" + total.toFixed(2)+" CLP", "Por persona");
+    swal("Costo total: $" + total.toFixed(2) + " CLP", "Por persona");
 }
-
-
-//----------------map

@@ -28,21 +28,22 @@ header {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0; }
-
   header #ico-info {
     display: none; } }
+
 @media screen and (max-width: 767px) {
   a.navbar-brand.logo {
     padding: 16px 0; }
-
   #navigation {
     display: none; } }
+
 @media screen and (max-width: 577px) {
   a.navbar-brand.logo {
     width: 70%;
     padding-top: 16px; }
     a.navbar-brand.logo img {
       width: 200px; } }
+
 .box {
   z-index: 900;
   background-color: #fff;
@@ -73,13 +74,12 @@ header {
 @media screen and (min-width: 992px) {
   #destino {
     padding-top: 30px; }
-
   .box {
     left: 20px; }
-
   #info button {
     left: 20px;
     padding: 5px 122px; } }
+
 #calculator {
   z-index: 900; }
   #calculator .titulo h1 {
@@ -127,6 +127,7 @@ header {
   transform: translate(190px, -2px);
   width: 80px;
   border: 1px solid #ffc56e; }
+
 #pasajeros p {
   position: absolute;
   padding-left: 20px;
@@ -144,5 +145,3 @@ header {
 
 body {
   background-color: none; }
-
-/*# sourceMappingURL=main.css.map */
