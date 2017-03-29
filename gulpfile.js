@@ -48,6 +48,8 @@ gulp.task('boostrap',function(){
 gulp.task('fonts',function(){
    gulp.src('./node_modules/font-awesome/css/font-awesome.min.css')
    .pipe(gulp.dest('./dist/css'));
+    gulp.src('./node_modules/font-awesome/fonts/*.*')
+   .pipe(gulp.dest('./dist/fonts'));
 });
 
 gulp.task('jq',function(){
