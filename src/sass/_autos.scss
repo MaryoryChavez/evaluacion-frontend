@@ -1,4 +1,5 @@
 #calculator{
+    z-index: 900;
     .titulo{
         h1{
             font-weight: bold;
@@ -40,6 +41,7 @@
     }
     button{
         @include botonNaranja (104%, 0%);
+        z-index: 900;
     }
 }
 

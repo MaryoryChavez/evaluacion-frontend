@@ -1,4 +1,5 @@
 header {
+  z-index: 900;
   background-color: #fff; }
   header .conten {
     padding-bottom: 15px; }
@@ -22,6 +23,7 @@ header {
       text-align: center; }
 
 .box {
+  z-index: 900;
   background-color: #fff;
   position: absolute;
   width: 300px;
@@ -45,53 +47,50 @@ header {
   background-color: #ffc56e;
   border: none;
   font-weight: bold;
-  color: #fff; }
+  color: #fff;
+  z-index: 900; }
 
-#calculator .titulo h1 {
-  font-weight: bold;
-  font-size: 1em;
-  margin-bottom: 0; }
-
-#calculator .titulo p {
-  padding-left: 15px;
-  margin: 0;
-  padding-top: 0; }
-
-#calculator .box {
-  bottom: 225px;
-  height: 280px; }
-  #calculator .box img {
-    width: 35px;
+#calculator {
+  z-index: 900; }
+  #calculator .titulo h1 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0; }
+  #calculator .titulo p {
+    padding-left: 15px;
+    margin: 0;
+    padding-top: 0; }
+  #calculator .box {
+    bottom: 225px;
+    height: 280px; }
+    #calculator .box img {
+      width: 35px;
+      position: absolute;
+      top: -1px; }
+  #calculator .radio {
+    padding: 2px 0;
+    padding-left: 20px; }
+  #calculator .name_car {
+    font-weight: bold;
+    padding: 0;
+    margin: 0; }
+  #calculator .desc {
+    margin: 0;
+    font-size: 10px;
+    padding: 0; }
+  #calculator .data {
+    padding-left: 45px;
+    transform: translateY(-5px); }
+  #calculator button {
     position: absolute;
-    top: -1px; }
-
-#calculator .radio {
-  padding: 2px 0;
-  padding-left: 20px; }
-
-#calculator .name_car {
-  font-weight: bold;
-  padding: 0;
-  margin: 0; }
-
-#calculator .desc {
-  margin: 0;
-  font-size: 10px;
-  padding: 0; }
-
-#calculator .data {
-  padding-left: 45px;
-  transform: translateY(-5px); }
-
-#calculator button {
-  position: absolute;
-  top: 104%;
-  left: 0%;
-  padding: 5px 127px;
-  background-color: #ffc56e;
-  border: none;
-  font-weight: bold;
-  color: #fff; }
+    top: 104%;
+    left: 0%;
+    padding: 5px 127px;
+    background-color: #ffc56e;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    z-index: 900; }
 
 #pasajeros input {
   display: inline;
@@ -104,9 +103,14 @@ header {
   padding-left: 20px;
   font-weight: bold; }
 
-html {
-  background-image: url("../../dist/img/background.jpg");
-  background-size: cover 100%; }
+#map {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  z-index: 0; }
 
 body {
   background-color: none; }

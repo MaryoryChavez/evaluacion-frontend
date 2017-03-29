@@ -1,11 +1,8 @@
 @import "header";
 @import "puntos";
 @import "autos";
+@import "map";
 
-html{
-    background-image: url('../../dist/img/background.jpg');
-    background-size:cover 100%;
-}
 body{
     background-color: none;
 }
