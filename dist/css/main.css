@@ -28,29 +28,29 @@ header {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0; }
+
   header #ico-info {
     display: none; } }
-
 @media screen and (max-width: 767px) {
   a.navbar-brand.logo {
     padding: 16px 0; }
+
   #navigation {
     display: none; } }
-
 @media screen and (max-width: 577px) {
   a.navbar-brand.logo {
     width: 70%;
     padding-top: 16px; }
     a.navbar-brand.logo img {
       width: 200px; } }
-
 .box {
   z-index: 900;
   background-color: #fff;
   position: absolute;
-  width: 300px;
+  width: 290px;
   height: 190px;
-  transform: translate(10%, 58%); }
+  top: 75px;
+  left: 5px; }
   .box h1 {
     font-size: 1.2em;
     text-transform: uppercase;
@@ -58,20 +58,28 @@ header {
   .box .form-control {
     width: 260px !important;
     border: 1px solid #ffc56e; }
-  .box #destino {
-    padding-top: 30px; }
 
 #info button {
   position: absolute;
-  top: 45%;
-  left: 7.8%;
   padding: 5px 127px;
   background-color: #ffc56e;
   border: none;
   font-weight: bold;
   color: #fff;
+  top: 270px;
+  left: 0px;
   z-index: 900; }
 
+@media screen and (min-width: 992px) {
+  #destino {
+    padding-top: 30px; }
+
+  .box {
+    left: 20px; }
+
+  #info button {
+    left: 20px;
+    padding: 5px 122px; } }
 #calculator {
   z-index: 900; }
   #calculator .titulo h1 {
@@ -84,7 +92,8 @@ header {
     padding-top: 0; }
   #calculator .box {
     bottom: 225px;
-    height: 280px; }
+    height: 280px;
+    top: 305px; }
     #calculator .box img {
       width: 35px;
       position: absolute;
@@ -105,13 +114,12 @@ header {
     transform: translateY(-5px); }
   #calculator button {
     position: absolute;
-    top: 104%;
-    left: 0%;
     padding: 5px 127px;
     background-color: #ffc56e;
     border: none;
     font-weight: bold;
     color: #fff;
+    top: 285px;
     z-index: 900; }
 
 #pasajeros input {
@@ -119,7 +127,6 @@ header {
   transform: translate(190px, -2px);
   width: 80px;
   border: 1px solid #ffc56e; }
-
 #pasajeros p {
   position: absolute;
   padding-left: 20px;
@@ -137,3 +144,5 @@ header {
 
 body {
   background-color: none; }
+
+/*# sourceMappingURL=main.css.map */

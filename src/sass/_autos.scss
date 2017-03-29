@@ -15,6 +15,7 @@
     .box{
         bottom: 225px;
         height: 280px;
+        top: 305px;
         img{
             width: 35px;
             position: absolute;
@@ -40,7 +41,8 @@
         transform: translateY(-5px);
     }
     button{
-        @include botonNaranja (104%, 0%);
+        @include botonNaranja;
+        top: 285px;
         z-index: 900;
     }
 }
