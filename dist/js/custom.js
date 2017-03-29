@@ -34,6 +34,7 @@ function cargarLista() {
         $("#list2").append(liText);
     }
     $("#check_city").click(function () {
+        $("#calculator").hide();
         var list1 = $("#list1 option:selected").val();
         var list2 = $("#list2 option:selected").val();
         
