@@ -30,3 +30,36 @@ header{
         }
     }
 }
+
+@media screen and (max-width:767px){
+    .navbar-toggle{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    header{
+        #ico-info{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    a.navbar-brand.logo{
+        padding: 16px 0;
+    }
+    #navigation{
+      display: none;
+    }
+}
+
+@media screen and (max-width:577px){
+    a.navbar-brand.logo{
+        width: 70%;
+        padding-top: 16px;
+        img{
+            width: 200px;
+        }
+    }
+}

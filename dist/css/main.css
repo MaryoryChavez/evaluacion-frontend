@@ -22,6 +22,28 @@ header {
       font-weight: bold;
       text-align: center; }
 
+@media screen and (max-width: 767px) {
+  .navbar-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
+  header #ico-info {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  a.navbar-brand.logo {
+    padding: 16px 0; }
+  #navigation {
+    display: none; } }
+
+@media screen and (max-width: 577px) {
+  a.navbar-brand.logo {
+    width: 70%;
+    padding-top: 16px; }
+    a.navbar-brand.logo img {
+      width: 200px; } }
+
 .box {
   z-index: 900;
   background-color: #fff;
@@ -105,9 +127,10 @@ header {
 
 #map {
   height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
-  bottom: -200px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 0; }

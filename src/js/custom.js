@@ -6,9 +6,9 @@ var pass = null;
 function initMap() {
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
+          center: {lat: -33.4696089, lng: -70.7153597},
           scrollwheel: false,
-          zoom: 8
+          zoom: 12
         });
       }
 
@@ -41,6 +41,12 @@ function cargarLista() {
         km = parseInt(list2) - parseInt(list1);
     })
 };
+
+$('.dropdown-toggle').hover(function(){
+    $('.dropdown-menu').show();
+},function(){
+    $('.dropdown-menu').hide();
+});
 
 function opciones() {
     $('#check_car').click(function () {
