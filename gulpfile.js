@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-//var rename = require('gulp-rename');
 var notify = require('gulp-notify');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
@@ -11,8 +10,6 @@ var minify = require('gulp-minify');
 
 
 gulp.task('script', function(cb){
-    /*gulp.src('./src/js/custom.js')
-    .pipe(gulp.dest('./dist/js'));*/
     gulp.src('./src/js/ciudades.js')
     .pipe(gulp.dest('./dist/js'));
 	// tarea script
